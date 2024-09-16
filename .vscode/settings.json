@@ -1,0 +1,22 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.tsc.autoDetect": "off",
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "/*electron-builder.json5",
+        "/*electron-builder.json"
+      ],
+      "url": "https://json.schemastore.org/electron-builder"
+    }
+  ],
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "name": "local",
+      "database": "${workspaceFolder:笔记本程序}/database.db"
+    }
+  ],
+  "sqltools.useNodeRuntime": true
+}
